@@ -1,8 +1,8 @@
-import React, {useState, useEffect} from 'react';
+import React, { useState } from 'react';
 import axios from 'axios';
 import styled, {createGlobalStyle} from "styled-components";
 import { useAnimation, motion } from "framer-motion";
-import {imageFade} from "../animations";
+import { imageFade } from "../animations";
 
 interface ImageType {
 	file: string;
@@ -24,13 +24,8 @@ export const App = () => {
 		setIsLoading(true);
 		const imageRequest = await axios.get<ImageType>("https://aws.random.cat/meow");
 		setImage(imageRequest.data.file);
-	
-
 	}
-	
-	useEffect(() => {
-		getImage();
-	}, []);
+
 
 
 	return (
