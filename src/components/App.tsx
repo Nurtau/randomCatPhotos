@@ -60,6 +60,7 @@ const ImageContainer = styled(motion.div)`
 
 	@media (max-width: 768px) {
 		width: 90vw;
+		margin-top: 1rem;
 	}
 `;
 
