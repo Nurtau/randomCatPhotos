@@ -62,6 +62,10 @@ const ImageContainer = styled(motion.div)`
 	box-shadow: 0 2px 20px rgba(0, 0, 0, 0.4);
 	border-radius: 2rem;
 	overflow: hidden;
+
+	@media (max-width: 768px) {
+		width: 90vw;
+	}
 `;
 
 const StyledImage = styled(motion.img)`
